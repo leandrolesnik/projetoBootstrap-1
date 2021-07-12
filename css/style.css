@@ -1,0 +1,21 @@
+.footer {
+   width: 100%;
+   min-height: 10vh;
+   background-image: linear-gradient(43deg, #359672 0%, #23a87a 46%, #10d88b 100%);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+footer i {
+   font-size: 4em;
+   margin: 0.2em;
+}
+
+footer h2,h3 {
+   width: 50%;
+}
+
+.footer div img {
+   width: 100%;
+}
