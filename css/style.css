@@ -45,6 +45,17 @@ main {
       left: -90px;
    }
 }
+.logoclip2 {
+   z-index: 10;
+   position: absolute; 
+   right: 15px;
+}
+
+@media(max-width: 470px){
+   .logoclip2 {
+      right:10px;
+   }
+}
 .imgclip {
    z-index: -10;
    position: relative;
