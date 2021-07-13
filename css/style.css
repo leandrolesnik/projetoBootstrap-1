@@ -1,60 +1,59 @@
 * {
-  scroll-behavior: smooth;
+   scroll-behavior: smooth;
 }
 
 /*HEADER*/
+
 header {
-  background-color: #359672;
-  background-image: linear-gradient(
-    43deg,
-    #195740 0%,
-    #23a87a 46%,
-    #10d88b 100%
-  );
-  min-height: 15vh;
+   background-color: #359672;
+   background-image: linear-gradient( 43deg, #195740 0%, #23a87a 46%, #10d88b 100%);
+   min-height: 15vh;
 }
+
 /*MAIN*/
 
 main {
-  min-height: 100vh;
+   min-height: 100vh;
 }
 
 /* BOTOES DE ACESSIBILIDADE */
+
 .botoesAcessibilidade {
-  position: fixed;
-  top: 325px;
-  right: -170px;
-  width: 200px;
-  display: flex;
-  background-color: #333333;
-  z-index: 9998;
-  transition: right 2s;
+   position: fixed;
+   top: 325px;
+   right: -170px;
+   width: 200px;
+   display: flex;
+   background-color: #333333;
+   z-index: 9998;
+   transition: right 2s;
 }
 
 .botoesAcessibilidade:hover {
-  right: 0px;
+   right: 0px;
 }
 
 .botoesAcessibilidade span {
-  font-size: 1.2em;
-  text-align: center;
-  background-color: #000000;
-  color: #ffffff;
-  font-weight: 500;
-  padding: 5px;
-  writing-mode: vertical-lr;
+   font-size: 1.2em;
+   text-align: center;
+   background-color: #000000;
+   color: #ffffff;
+   font-weight: 500;
+   padding: 5px;
+   writing-mode: vertical-lr;
 }
 
 .botoesAcessibilidade button {
-  padding: 15px 15px;
-  margin: 15px;
-  font-size: 1em;
-  width: 120px;
-  color: #ffffff;
-  background-color: #195740;
-  border: 1px solid #10d88b;
-  border-radius: 45px;
+   padding: 15px 15px;
+   margin: 15px;
+   font-size: 1em;
+   width: 120px;
+   color: #ffffff;
+   background-color: #195740;
+   border: 1px solid #10d88b;
+   border-radius: 45px;
 }
+
 /* .buttonContato {
    position: absolute;
    position: fixed;
@@ -64,85 +63,72 @@ main {
 } */
 
 /*Config img whatsapp*/
-.imgWhats {
-  max-width: 6%;
-  position: absolute;
-  position: fixed;
-  right: 1%;
-  bottom: 1%;
-  z-index: 10;
-  cursor: pointer;
 
-  -webkit-filter: drop-shadow(5px 5px 5px #222222);
-  filter: drop-shadow(5px 5px 5px #222222);
+.imgWhats {
+   max-width: 6%;
+   position: absolute;
+   position: fixed;
+   right: 1%;
+   bottom: 1%;
+   z-index: 10;
+   cursor: pointer;
+   -webkit-filter: drop-shadow(5px 5px 5px #222222);
+   filter: drop-shadow(5px 5px 5px #222222);
 }
+
 .logoclip {
-  z-index: 10;
-  position: absolute;
-  left: -150px;
+   z-index: 10;
+   position: absolute;
+   left: -150px;
 }
+
 @media (max-width: 450px) {
-  .logoclip {
-    left: -90px;
-  }
+   .logoclip {
+      left: -90px;
+   }
 }
+
 .logoclip2 {
-  z-index: 10;
-  position: absolute;
-  right: 25px;
+   z-index: 10;
+   position: absolute;
+   right: 25px;
 }
 
 @media (max-width: 470px) {
-  .logoclip2 {
-    right: -55px;
-  }
+   .logoclip2 {
+      right: -55px;
+   }
 }
+
 .imgclip {
-  z-index: -10;
-  position: relative;
+   z-index: -10;
+   position: relative;
 }
+
 .dna {
-  height: 5vh;
-  background-size: contain;
-  background-clip: border-box;
-  background-image: linear-gradient(
-      rgba(255, 255, 255, 0.7),
-      rgba(255, 255, 255, 0.7)
-    ),
-    url(../img/Dna.png);
+   height: 5vh;
+   background-size: contain;
+   background-clip: border-box;
+   background-image: linear-gradient( rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../img/Dna.png);
 }
 
 .imgEspecialidade {
-  max-height: 80%;
-  max-width: 80%;
+   max-height: 80%;
+   max-width: 80%;
 }
 
 .especialidades div h5 {
-  font-size: 1.5em;
+   font-size: 1.5em;
 }
 
 .efeitoH2:after {
-  content: " ";
-  display: block;
-  width: 100%;
-  height: 2px;
-  margin-top: 50px;
-  background: -webkit-linear-gradient(
-    left,
-    rgba(189, 160, 147, 0) 0%,
-    rgba(230, 218, 57, 0.8) 20%,
-    rgb(52, 139, 26) 53%,
-    rgba(223, 126, 97, 0.8) 79%,
-    rgba(233, 7, 7, 0) 100%
-  );
-  background: linear-gradient(
-    left,
-    rgba(189, 160, 147, 0) 0%,
-    rgba(226, 230, 27, 0.8) 20%,
-    rgb(52, 139, 26) 53%,
-    rgba(223, 126, 97, 0.8) 79%,
-    rgba(233, 7, 7, 0) 100%
-  );
+   content: " ";
+   display: block;
+   width: 100%;
+   height: 2px;
+   margin-top: 50px;
+   background: -webkit-linear-gradient( left, rgba(189, 160, 147, 0) 0%, rgba(230, 218, 57, 0.8) 20%, rgb(52, 139, 26) 53%, rgba(223, 126, 97, 0.8) 79%, rgba(233, 7, 7, 0) 100%);
+   background: linear-gradient( left, rgba(189, 160, 147, 0) 0%, rgba(226, 230, 27, 0.8) 20%, rgb(52, 139, 26) 53%, rgba(223, 126, 97, 0.8) 79%, rgba(233, 7, 7, 0) 100%);
 }
 
 .imgStudioFitness {
@@ -152,50 +138,45 @@ main {
 /*FOOTER*/
 
 .footer {
-  width: 100%;
-  min-height: 10vh;
-  background-color: #359672;
-  background-image: linear-gradient(
-    43deg,
-    #195740 0%,
-    #23a87a 46%,
-    #10d88b 100%
-  );
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+   width: 100%;
+   min-height: 10vh;
+   background-color: #359672;
+   background-image: linear-gradient( 43deg, #195740 0%, #23a87a 46%, #10d88b 100%);
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
 }
 
 footer i {
-  font-size: 3em;
-  margin: 0.1em;
+   font-size: 3em;
+   margin: 0.1em;
 }
 
 .footer img {
-  width: 15em;
-  margin: 1em;
+   width: 15em;
+   margin: 1em;
 }
 
 .footer a {
-  text-decoration: none;
-  color: rgb(51, 51, 51);
+   text-decoration: none;
+   color: rgb(51, 51, 51);
 }
 
 .footer a:hover {
-  color: rgba(51, 51, 51, 0.555);
+   color: rgba(51, 51, 51, 0.555);
 }
 
 /*BARRA DE ROLAGEM*/
 
 body::-webkit-scrollbar {
-  width: 10px;
+   width: 10px;
 }
 
 body::-webkit-scrollbar-track {
-  background: #2e4246;
+   background: #2e4246;
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #547980;
+   background-color: #547980;
 }
