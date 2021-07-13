@@ -20,12 +20,13 @@ main {
 
 /*Config img whatsapp*/
 .imgWhats{
-   max-width: 10%;
+   max-width: 6%;
    position: absolute;
    position: fixed;
    right: 1%;
    bottom: 1%;
    z-index: 10;
+   cursor: pointer;
 
    -webkit-filter: drop-shadow(5px 5px 5px #222222);
    filter: drop-shadow(5px 5px 5px #222222);
@@ -52,6 +53,10 @@ main {
 
 .especialidades div h5 {
    font-size: 1.5em;
+}
+
+.efeitoH2{
+
 }
 
 /*FOOTER*/
