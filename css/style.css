@@ -10,12 +10,25 @@ main {
    min-height: 100vh;
 }
 
-.buttonContato {
+/* .buttonContato {
    position: absolute;
    position: fixed;
    right: 1%;
    bottom: 1%;
    z-index: 10;
+} */
+
+/*Config img whatsapp*/
+.imgWhats{
+   max-width: 10%;
+   position: absolute;
+   position: fixed;
+   right: 1%;
+   bottom: 1%;
+   z-index: 10;
+
+   -webkit-filter: drop-shadow(5px 5px 5px #222222);
+   filter: drop-shadow(5px 5px 5px #222222);
 }
 
 /*FOOTER*/
