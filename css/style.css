@@ -18,6 +18,15 @@ main {
    z-index: 10;
 }
 
+.imgEspecialidade {
+  max-height: 80%;
+  max-width: 80%;
+}
+
+.especialidades div h5 {
+   font-size: 1.5em;
+}
+
 /*FOOTER*/
 
 .footer {
