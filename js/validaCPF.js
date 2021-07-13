@@ -13,8 +13,8 @@ let chamaValidaCPF = (param) => {
 
 
 let validaCPF = (strCPF) => {
-   var Soma;
-   var Resto;
+   let Soma;
+   let Resto;
    Soma = 0;
    if (strCPF == "00000000000") return false;
 
