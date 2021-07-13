@@ -33,7 +33,12 @@ main {
 .logoclip {
    z-index: 10;
    position: absolute; 
-   left: -5px;
+   left: -65px;
+}
+@media(max-width: 470px){
+   .logoclip {
+      left:-80px;
+   }
 }
 .imgclip {
    z-index: -1;
