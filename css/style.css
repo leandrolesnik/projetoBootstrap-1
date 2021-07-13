@@ -5,8 +5,16 @@
 /*HEADER*/
 
 header {
-   background-color: #359672;
-   background-image: linear-gradient( 43deg, #195740 0%, #23a87a 46%, #10d88b 100%);
+  /* background-color: #359672;
+  background-image: linear-gradient(
+    43deg,
+    #195740 0%,
+    #23a87a 46%,
+    #10d88b 100%
+  ); */
+   background-color: #10d88b;
+   background-image: linear-gradient(43deg, #10d88b 0%, #23a87a 46%, #195740 100%);
+
    min-height: 15vh;
 }
 
@@ -135,17 +143,26 @@ main {
    width: 35%;
 }
 
+/*Carrocel*/
+.carousel-control-prev-icon {
+   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2310d88b' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2310d88b' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
 /*FOOTER*/
 
 .footer {
-   width: 100%;
-   min-height: 10vh;
-   background-color: #359672;
-   background-image: linear-gradient( 43deg, #195740 0%, #23a87a 46%, #10d88b 100%);
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
+  width: 100%;
+  min-height: 10vh;
+  background-color: #10d88b;
+  background-image: linear-gradient(43deg, #10d88b 0%, #23a87a 46%, #195740 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 footer i {
@@ -178,5 +195,6 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-   background-color: #547980;
+  background-color: #547980;
 }
+
