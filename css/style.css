@@ -65,8 +65,14 @@ main {
    font-size: 1.5em;
 }
 
-.efeitoH2{
-
+.efeitoH2:after{
+   content: ' ';
+   display: block;
+   width: 100%;
+   height: 2px;
+   margin-top: 50px;
+   background: -webkit-linear-gradient(left, rgba(189, 160, 147, 0) 0%,rgba(230, 218, 57, 0.8) 20%,rgb(52, 139, 26) 53%,rgba(223, 126, 97, 0.8) 79%,rgba(233, 7, 7, 0) 100%); 
+   background: linear-gradient(left, rgba(189, 160, 147, 0) 0%,rgba(226, 230, 27, 0.8) 20%,rgb(52, 139, 26) 53%,rgba(223, 126, 97, 0.8) 79%,rgba(233, 7, 7, 0) 100%);
 }
 
 /*FOOTER*/
