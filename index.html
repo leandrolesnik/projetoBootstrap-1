@@ -17,25 +17,134 @@
 
 <body>
    <main class="container-fluid">
-      <header class="row justify-content-md-around align-items-center">
-         <img class="img-fluid w-25" src="img/logo  - svg.svg" alt="Logo">
-         <ul class="nav">
-            <li class="nav-item">
-               <a class="nav-link text-dark" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-               <a class="nav-link text-dark" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-               <a class="nav-link text-dark" href="#">Link</a>
-            </li>
-         </ul>
+      <header class="row">
+         <div class="container">
+            <nav class="navbar navbar-expand-sm navbar-light">
+               <a class="navbar-brand col-sm-6" href="#">
+                  <img class="img-fluid w-100" src="img/logo misto - svg.svg" alt="Logo">
+               </a>
+               <div class="col-sm-6 offset-5 offset-sm-0">
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                     aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Alterna navegação">
+                     <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse justify-content-around align-items-center" id="navbarNavAltMarkup">
+                     <div class="navbar-nav">
+                        <a class="nav-item nav-link h5 active" href="#">Home <span class="sr-only">(Página atual)</span></a>
+                        <a class="nav-item nav-link h5" href="#">Destaques</a>
+                        <a class="nav-item nav-link h5" href="#">Preços</a>
+                     </div>
+                  </div>
+               </div>
+            </nav>
+         </div>
       </header>
+
+      <div class="modal fade" id="ExemploModalCentralizado" tabindex="-1" role="dialog"
+         aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+         <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h5 class="modal-title" id="TituloModalCentralizado">Agendamento</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                     <span aria-hidden="true">&times;</span>
+                  </button>
+               </div>
+               <div class="modal-body">
+                  <form action="#" class="mt-5">
+                     <div class="form-row">
+                        <div class="form-group col-md-6">
+                           <label for="nome">Nome</label>
+                           <input type="text" id="nome" class="form-control">
+                        </div>
+                        <div class="form-group col-md-6">
+                           <label for="sobrenome">Sobrenome</label>
+                           <input type="text" id="sobrenome" class="form-control">
+                        </div>
+                     </div>
+                     <div class="form-row">
+                        <div class="form-group col-md-6">
+                           <label for="idade">Idade</label>
+                           <input type="text" id="idade" class="form-control">
+                        </div>
+                        <div class="form-group col-md-6">
+                           <label for="genero">Genero</label>
+                           <select name="selectGenero" id="selectGenero" class="form-control">
+                              <option value="null">-</option>
+                              <option value="feminino">Feminino</option>
+                              <option value="masculino">Masculino</option>
+                              <option value="hTransgenero">Homem transgênero</option>
+                              <option value="mTransgereno">Mulher Transgênero</option>
+                              <option value="hTransexual">Homem Transexual</option>
+                              <option value="mTransexual">Mulher Transexual</option>
+                              <option value="cisgenero">Cisgênero</option>
+                              <option value="nSeiResponder">Não sei responder</option>
+                              <option value="pNaoResponder">Prefiro não responder</option>
+                              <option value="outros">Outros</option>
+                           </select>
+                        </div>
+                     </div>
+
+                     <div class="form-group">
+                        <label for="cpf">CPF (opcional)</label>
+                        <input type="text" id="cpf" class="form-control" onblur="chamaValidaCPF(this.value)">
+                     </div>
+                     <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" class="form-control">
+                     </div>
+                     <div class="form-row">
+                        <div class="form-group col-md-12">
+                           <label for="acompanhamento">Realiza acompanhamento com profissional?</label>
+
+                           <input type="radio" name="acompanhamento" id="inputSimAcompanhamento" class="ml-3"
+                              onclick="mostraOpcaoAcompanhamento()">
+                           <label for="acompanhamento" class="mr-2">Sim</label>
+
+                           <input type="radio" name="acompanhamento" id="inputNãoAcompanhamento" class="ml-2"
+                              onclick="ocultaOpcaoAcompanhamento()">
+                           <label for="acompanhamento">Não</label>
+
+                        </div>
+                        <div class="form-group col-12 d-none" id="divInfoAcompanhamento">
+                           <label for="infoAcompanhamento">Informar o acompanhamento</label>
+                           <input type="text" name="infoAcompanhamento" id="infoAcompanhamento" class="form-control">
+                        </div>
+                     </div>
+                     <div class="form-row">
+                        <div class="form-group col-12">
+                           <label for="comorbidade">Possui comorbidade?</label>
+
+                           <input type="radio" name="comorbidade" id="inputSimComorbidade" class="ml-3"
+                              onclick="mostraOpcaoComorbidade()">
+                           <label for="comorbidade" class="mr-2">Sim</label>
+
+                           <input type="radio" name="comorbidade" id="inputNãoComorbidade" class="ml-2"
+                              onclick="ocultaOpcaoComorbidade()">
+                           <label for="comorbidade">Não</label>
+
+                        </div>
+                        <div class="form-group col-md-12 d-none" id="divInfoComorbidade">
+                           <label for="infoComorbidade">Informar a comorbidade</label>
+                           <input type="text" name="infoComorbidade" id="infoComorbidade" class="form-control">
+                        </div>
+                     </div>
+
+               </div>
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                  <button type="button" class="btn btn-primary">Enviar</button>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <button type="button" data-toggle="modal" data-target="#ExemploModalCentralizado"
+         class="btn btn-dark buttonContato">Entrar em contato</button>
    </main>
 
    <footer class="footer">
-      <div>
-         <img src="img/logo 2 - svg.svg" alt="">
+      <img src="img/logo 2 - svg.svg" alt="">
       <div>
          <i class="fab fa-instagram"></i>
          <i class="fab fa-whatsapp"></i>
@@ -49,7 +158,8 @@
       </div>
    </div>
 
-   <script src="js/script.js"></script>
+   <script src="js/inputFormulario.js"></script>
+   <script src="js/validaCPF.js"></script>
    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
    <script>
       new window.VLibras.Widget('https://vlibras.gov.br/app');
