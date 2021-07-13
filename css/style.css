@@ -48,12 +48,12 @@ main {
 .logoclip2 {
    z-index: 10;
    position: absolute; 
-   right: 15px;
+   right: 50px;
 }
 
 @media(max-width: 470px){
    .logoclip2 {
-      right:10px;
+      right:-55px;
    }
 }
 .imgclip {
