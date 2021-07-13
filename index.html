@@ -68,13 +68,9 @@
                   <!-- FORMULARIO -->
                   <form action="#" method="GET" id="formulario" class="mt-5">
                      <div class="form-row">
-                        <div class="form-group col-md-6">
-                           <label for="nome">Nome</label>
+                        <div class="form-group col-md-12">
+                           <label for="nome">Nome completo</label>
                            <input type="text" id="nome" class="form-control">
-                        </div>
-                        <div class="form-group col-md-6">
-                           <label for="sobrenome">Sobrenome</label>
-                           <input type="text" id="sobrenome" class="form-control">
                         </div>
                      </div>
                      <div class="form-row">
@@ -86,16 +82,16 @@
                            <label for="genero">Genero</label>
                            <select name="selectGenero" id="selectGenero" class="form-control">
                               <option value="null">-</option>
-                              <option value="feminino">Feminino</option>
-                              <option value="masculino">Masculino</option>
-                              <option value="hTransgenero">Homem transgênero</option>
-                              <option value="mTransgereno">Mulher Transgênero</option>
-                              <option value="hTransexual">Homem Transexual</option>
-                              <option value="mTransexual">Mulher Transexual</option>
-                              <option value="cisgenero">Cisgênero</option>
-                              <option value="nSeiResponder">Não sei responder</option>
-                              <option value="pNaoResponder">Prefiro não responder</option>
-                              <option value="outros">Outros</option>
+                              <option value="Masculino">Masculino</option>
+                              <option value="Feminino">Feminino</option>
+                              <option value="Homem transgênero">Homem transgênero</option>
+                              <option value="Mulher Transgênero">Mulher Transgênero</option>
+                              <option value="Homem Transexual">Homem Transexual</option>
+                              <option value="Mulher Transexual">Mulher Transexual</option>
+                              <option value="Cisgênero">Cisgênero</option>
+                              <option value="Não sei responder">Não sei responder</option>
+                              <option value="Prefiro não responder">Prefiro não responder</option>
+                              <option value="Outros">Outros</option>
                            </select>
                         </div>
                      </div>
@@ -112,11 +108,11 @@
                         <div class="form-group col-md-12">
                            <label for="acompanhamento">Realiza acompanhamento com profissional?</label>
 
-                           <input type="radio" name="acompanhamento" id="inputSimAcompanhamento" class="ml-3"
+                           <input type="radio" name="acompanhamento" id="inputSimAcompanhamento" value="Sim" class="ml-3"
                               onclick="mostraOpcaoAcompanhamento()">
                            <label for="acompanhamento" class="mr-2">Sim</label>
 
-                           <input type="radio" name="acompanhamento" id="inputNaoAcompanhamento" class="ml-2"
+                           <input type="radio" name="acompanhamento" id="inputNaoAcompanhamento" value="Não" class="ml-2"
                               onclick="ocultaOpcaoAcompanhamento()">
                            <label for="acompanhamento">Não</label>
 
@@ -130,11 +126,11 @@
                         <div class="form-group col-12">
                            <label for="comorbidade">Possui comorbidade?</label>
 
-                           <input type="radio" name="comorbidade" id="inputSimComorbidade" class="ml-3"
+                           <input type="radio" name="comorbidade" id="inputSimComorbidade" value="Sim" class="ml-3"
                               onclick="mostraOpcaoComorbidade()">
                            <label for="comorbidade" class="mr-2">Sim</label>
 
-                           <input type="radio" name="comorbidade" id="inputNaoComorbidade" class="ml-2"
+                           <input type="radio" name="comorbidade" id="inputNaoComorbidade" value="Não" class="ml-2"
                               onclick="ocultaOpcaoComorbidade()">
                            <label for="comorbidade">Não</label>
 
@@ -147,7 +143,7 @@
                </div>
                <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                  <button class="btn btn-primary" id="submit" onclick="whatsapp()">Enviar</button>
+                  <button class="btn btn-success" id="submit" onclick="whatsapp()">Enviar</button>
                </div>
             </div>
          </div>
@@ -204,7 +200,7 @@
             <p>
                Me formei no Centro Universitário INTA - UNINTA
             </p>
-            <p>
+            <p class="lead">
                Desde novo era incentivado e ensinado a comer bem pra evitar problemas no futuro, então cresci sabendo da
                importância de uma boa alimentação. Presenciando muitas pessoas próximas adoecerem por causa de nunca se
                importaram ou nunca terem sido devidamente ensinados a comer saudável.
@@ -300,7 +296,7 @@
       </div>
       <!-- FIM DAS MINHAS ESPECIALIZAÇÕES -->
       <!-- Carrocel -->
-      <div id="carouselExampleIndicators" class="carousel slide my-5" data-ride="carousel">
+      <div id="carouselExampleIndicators" class="carousel slide w-50 my-5 mx-auto" data-ride="carousel">
          <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -309,17 +305,17 @@
          <div class="carousel-inner">
             <div class="carousel-item active">
                <a href="https://www.instagram.com/nutricionist.lucas/">
-                  <img class="d-block w-25 mx-auto" src="/img/carrocel/imgP.jpg" alt="imagem do instagram">
+                  <img class="d-block w-50 mx-auto" src="/img/carrocel/imgP.jpg" alt="imagem do instagram">
                </a>
             </div>
             <div class="carousel-item">
                <a href="https://www.instagram.com/nutricionist.lucas/">
-                  <img class="d-block w-25 mx-auto" src="/img/carrocel/imgP2.jpg" alt="imagem do instagram">
+                  <img class="d-block w-50 mx-auto" src="/img/carrocel/imgP2.jpg" alt="imagem do instagram">
                </a>
             </div>
             <div class="carousel-item">
                <a href="https://www.instagram.com/nutricionist.lucas/">
-                  <img class="d-block w-25 mx-auto" src="/img/carrocel/imgP3.jpg" alt="imagem do instagram">
+                  <img class="d-block w-50 mx-auto" src="/img/carrocel/imgP3.jpg" alt="imagem do instagram">
                </a>
             </div>
          </div>
@@ -351,15 +347,15 @@
 
       <!-- FIM PARCEIROS -->
 
-      <img src="img/WhatsApp.png" class="imgWhats buttonContato">
+      <img src="img/WhatsApp.png" class="imgWhats buttonContato" data-toggle="modal" data-target="#ExemploModalCentralizado">
    </main>
 
    <footer class="footer mt-4">
       <img src="img/logo-2.svg" alt="">
       <div>
-         <a href="https://www.instagram.com/nutricionist.lucas/" target="_black"><i class="fab fa-instagram"></i></a>
+         <a href="https://www.instagram.com/nutricionist.lucas/" target="_black"><i class="fab fa-instagram mx-1 mb-2"></i></a>
 
-         <a href="" target="_black"><i class="fab fa-whatsapp"></i></a>
+         <a href="" data-toggle="modal" data-target="#ExemploModalCentralizado" target="_black"><i class="fab fa-whatsapp mx-1"></i></a>
       </div>
    </footer>
 
