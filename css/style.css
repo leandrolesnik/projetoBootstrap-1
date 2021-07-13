@@ -23,6 +23,15 @@ header {
   min-height: 15vh;
 }
 
+.btn-success {
+  background-color: #10d88b;
+  background-image: linear-gradient(
+    43deg,
+    #10d88b 0%,
+    #23a87a 46%,
+    #195740 100%
+  );
+}
 /*MAIN*/
 
 main {
@@ -49,7 +58,13 @@ main {
 .botoesAcessibilidade span {
   font-size: 1.2em;
   text-align: center;
-  background-color: #195740;
+  background-color: #10d88b;
+  background-image: linear-gradient(
+    43deg,
+    #10d88b 0%,
+    #23a87a 46%,
+    #195740 100%
+  );
   color: #ffffff;
   font-weight: 500;
   padding: 5px;
@@ -199,7 +214,7 @@ main {
 }
 
 footer i {
-   font-size: 2em;
+  font-size: 2em;
 }
 
 .footer img {
