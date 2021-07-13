@@ -1,3 +1,7 @@
+* {
+   scroll-behavior: smooth;
+}
+
 /*HEADER*/
 header {
    background-color: #359672;
@@ -20,12 +24,13 @@ main {
 
 /*Config img whatsapp*/
 .imgWhats{
-   max-width: 10%;
+   max-width: 6%;
    position: absolute;
    position: fixed;
    right: 1%;
    bottom: 1%;
    z-index: 10;
+   cursor: pointer;
 
    -webkit-filter: drop-shadow(5px 5px 5px #222222);
    filter: drop-shadow(5px 5px 5px #222222);
@@ -60,6 +65,10 @@ main {
    font-size: 1.5em;
 }
 
+.efeitoH2{
+
+}
+
 /*FOOTER*/
 
 .footer {
@@ -82,3 +91,26 @@ footer i {
    width: 15em;
    margin: 1em;
 }
+
+.footer a {
+   text-decoration: none;
+   color: rgb(51, 51, 51);
+}
+
+.footer a:hover {
+   color: rgba(51, 51, 51, 0.555);
+}
+
+/*BARRA DE ROLAGEM*/
+
+body::-webkit-scrollbar {
+   width: 10px;
+ }
+ 
+ body::-webkit-scrollbar-track {
+   background: #2e4246;
+ }
+ 
+ body::-webkit-scrollbar-thumb {
+   background-color: #547980;
+ }
