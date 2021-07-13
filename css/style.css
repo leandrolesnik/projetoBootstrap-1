@@ -1,3 +1,7 @@
+* {
+   scroll-behavior: smooth;
+}
+
 /*HEADER*/
 header {
    background-color: #359672;
@@ -34,7 +38,12 @@ main {
 .logoclip {
    z-index: 10;
    position: absolute; 
-   left: -5px;
+   left: -65px;
+}
+@media(max-width: 470px){
+   .logoclip {
+      left:-80px;
+   }
 }
 .imgclip {
    z-index: -1;
@@ -81,3 +90,26 @@ footer i {
    width: 15em;
    margin: 1em;
 }
+
+.footer a {
+   text-decoration: none;
+   color: rgb(51, 51, 51);
+}
+
+.footer a:hover {
+   color: rgba(51, 51, 51, 0.555);
+}
+
+/*BARRA DE ROLAGEM*/
+
+body::-webkit-scrollbar {
+   width: 10px;
+ }
+ 
+ body::-webkit-scrollbar-track {
+   background: #2e4246;
+ }
+ 
+ body::-webkit-scrollbar-thumb {
+   background-color: #547980;
+ }

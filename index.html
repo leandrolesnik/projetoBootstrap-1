@@ -11,7 +11,7 @@
       integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
       integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
-
+   <script type="text/javascript" src="js/whatsapp.js"></script>
    <title>nutricionist.lucas</title>
 </head>
 
@@ -21,7 +21,7 @@
          <div class="container">
             <nav class="navbar navbar-expand-sm navbar-light">
                <a class="navbar-brand col-sm-6" href="#">
-                  <img class="img-fluid w-100" src="img/logo-2 - svg.svg" alt="Logo">
+                  <img class="img-fluid w-100" src="img/logo-2.svg" alt="Logo">
                </a>
                <div class="col-sm-6 p-0 offset-5 offset-sm-0">
                   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
@@ -31,10 +31,9 @@
                   <div class="collapse navbar-collapse justify-content-around align-items-center"
                      id="navbarNavAltMarkup">
                      <div class="navbar-nav">
-                        <a class="nav-item nav-link h5 active" href="#">Home <span class="sr-only">(Página
-                              atual)</span></a>
-                        <a class="nav-item nav-link h5" href="#">Destaques</a>
-                        <a class="nav-item nav-link h5" href="#">Preços</a>
+                        <a class="nav-item nav-link h5" href="#sobreMim">Sobre mim</a>
+                        <a class="nav-item nav-link h5" href="#especialidades">Minhas especialidades</a>
+                        <a class="nav-item nav-link h5" href="#parceiros">Parceiros</a>
                      </div>
                   </div>
                </div>
@@ -53,7 +52,8 @@
                   </button>
                </div>
                <div class="modal-body">
-                  <form action="#" class="mt-5">
+                  <!-- FORMULARIO -->
+                  <form action="#" method="GET" id="formulario" class="mt-5">
                      <div class="form-row">
                         <div class="form-group col-md-6">
                            <label for="nome">Nome</label>
@@ -103,7 +103,7 @@
                               onclick="mostraOpcaoAcompanhamento()">
                            <label for="acompanhamento" class="mr-2">Sim</label>
 
-                           <input type="radio" name="acompanhamento" id="inputNãoAcompanhamento" class="ml-2"
+                           <input type="radio" name="acompanhamento" id="inputNaoAcompanhamento" class="ml-2"
                               onclick="ocultaOpcaoAcompanhamento()">
                            <label for="acompanhamento">Não</label>
 
@@ -121,7 +121,7 @@
                               onclick="mostraOpcaoComorbidade()">
                            <label for="comorbidade" class="mr-2">Sim</label>
 
-                           <input type="radio" name="comorbidade" id="inputNãoComorbidade" class="ml-2"
+                           <input type="radio" name="comorbidade" id="inputNaoComorbidade" class="ml-2"
                               onclick="ocultaOpcaoComorbidade()">
                            <label for="comorbidade">Não</label>
 
@@ -131,26 +131,38 @@
                            <input type="text" name="infoComorbidade" id="infoComorbidade" class="form-control">
                         </div>
                      </div>
-
                </div>
                <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                  <button type="button" class="btn btn-primary">Enviar</button>
+                  <button class="btn btn-primary" id="submit" onclick="whatsapp()">Enviar</button>
                </div>
             </div>
          </div>
       </div>
       <div class="container-fluid row text-center">
          <div class="col-md-6 col-sm-12 pt-5">
-            <img src="img/logo  - svg.svg" class="logoclip img-fluid offset-xl-2 offset-lg-2 " alt="">
-            <img src="img/lucasfoto2.png" class="col-xl-6 col-lg-7 col-md-9 col-sm-12 rounded imgclip ali mx-auto d-block" alt="">
+            <img src="img/logo-1.svg" class="logoclip img-fluid offset-xl-2 offset-lg-2 " alt="">
+            <img src="img/lucasfoto2.png"
+               class="col-xl-6 col-lg-7 col-md-9 col-sm-12 rounded imgclip ali mx-auto d-block" alt="">
          </div>
          <div class="col-md-6 col-sm-12 pt-5">
             <p>
-               Minha história com a nutrição é a seguinte
-               Desde novo era incentivado e ensinado a comer certo pra evitar problemas no futuro então cresci sabendo da importância disso
-               Então eu cresci vendo muitas pessoas próximas adoecendo por conta que nunca se importaram tanto ou nunca foram devidamente ensinados a comer certo
-               Foi ai que decidi que ia estudar nutrição pra ajudar as pessoas a ter melhor qualidade de vida, se sentirem melhor com a aparência física, não ter problemas quando ficassem mais velhas dependendo de remédios porque nunca foram ensinadas a comer bem. Também desconstruir informações erradas sobre alimentos que dizem ser os remédios pra tudo ou vilões de todas as doenças.
+            <h3>Nutricionista</h3>
+            </p>
+            <p>
+            <h4>Lucas Cardoso de Sousa</h4>
+            </p>
+            <p>
+            <h4>CRN-6 32138</h4>
+            </p>
+            <p>
+            <h4>Emagrecimento, Performance, Bem-estar, Saúde e Qualidade de vida.</h4>
+            </p>
+            <p>
+            <h4>Agendar Consulta</h4>
+            <br>
+            <button type="button" data-toggle="modal" data-target="#ExemploModalCentralizado"
+               class="btn btn-dark buttonContato">Entrar em contato</button>
             </p>
          </div>
       </div>
@@ -158,10 +170,7 @@
       <div class="dna row mt-5">
       </div>
 
-      <button type="button" data-toggle="modal" data-target="#ExemploModalCentralizado"
-         class="btn btn-dark buttonContato">Entrar em contato</button>
-
-      <div class="row justify-content-center mt-5 especialidades">
+      <div class="row justify-content-center mt-5 especialidades" id="especialidades">
          <div class="col-12 text-center mb-5">
             <img src="/img/logo-1 - svg.svg" alt="logo">
             <h2>Minhas especialidades</h2>
@@ -267,15 +276,15 @@
       </div>
 
 
-      <!--BOTÃO DE WHATSAPP-->
-      <img src="/img/imgWhats.png" class="imgWhats buttonContato">
+      <img src="img/WhatsApp.png" class="imgWhats buttonContato">
    </main>
 
    <footer class="footer">
-      <img src="img/logo-2 - svg.svg" alt="">
+      <img src="img/logo-2.svg" alt="">
       <div>
-         <i class="fab fa-instagram"></i>
-         <i class="fab fa-whatsapp"></i>
+         <a href="https://www.instagram.com/nutricionist.lucas/" target="_black"><i class="fab fa-instagram"></i></a>
+
+         <a href="" target="_black"><i class="fab fa-whatsapp"></i></a>
       </div>
    </footer>
 
