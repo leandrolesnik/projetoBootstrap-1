@@ -23,4 +23,3 @@ const telefone = '88999053714';
 
      window.open(urlDesktop + mensagem, '_blank')
   }
-  
