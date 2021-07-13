@@ -38,15 +38,16 @@ main {
 .logoclip {
    z-index: 10;
    position: absolute; 
-   left: -65px;
+   left: -150px;
 }
-@media(max-width: 470px){
-   .logoclip {
-      left:-80px;
+@media(max-width: 450px){
+   .logoclip{
+      left: -90px;
    }
 }
 .imgclip {
-   z-index: -1;
+   z-index: -10;
+   position: relative;
 }
 .dna {
    height: 5vh;
