@@ -17,6 +17,20 @@ main {
    bottom: 1%;
    z-index: 10;
 }
+.logoclip {
+   z-index: 10;
+   position: absolute; 
+   left: -5px;
+}
+.imgclip {
+   z-index: -1;
+}
+.dna {
+   height: 5vh;
+   background-size: contain;
+   background-clip: border-box;
+   background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),url(../img/Dna.png);
+}
 
 .imgEspecialidade {
   max-height: 80%;
