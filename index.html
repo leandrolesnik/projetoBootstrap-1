@@ -54,7 +54,7 @@
       </header>
 
       <!-- MODAL AGENDAMENTO -->
-      <div class="modal fade" id="ExemploModalCentralizado" tabindex="-1" role="dialog"
+      <div class="modal fade" id="modalAgendamento" tabindex="-1" role="dialog"
          aria-labelledby="TituloModalCentralizado" aria-hidden="true">
          <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
@@ -108,12 +108,12 @@
                         <div class="form-group col-md-12">
                            <label for="acompanhamento">Realiza acompanhamento com profissional?</label>
 
-                           <input type="radio" name="acompanhamento" id="inputSimAcompanhamento" value="Sim" class="ml-3"
-                              onclick="mostraOpcaoAcompanhamento()">
+                           <input type="radio" name="acompanhamento" id="inputSimAcompanhamento" value="Sim"
+                              class="ml-3" onclick="mostraOpcaoAcompanhamento()">
                            <label for="acompanhamento" class="mr-2">Sim</label>
 
-                           <input type="radio" name="acompanhamento" id="inputNaoAcompanhamento" value="Não" class="ml-2"
-                              onclick="ocultaOpcaoAcompanhamento()">
+                           <input type="radio" name="acompanhamento" id="inputNaoAcompanhamento" value="Não"
+                              class="ml-2" onclick="ocultaOpcaoAcompanhamento()">
                            <label for="acompanhamento">Não</label>
 
                         </div>
@@ -158,20 +158,20 @@
          </div>
          <div class="col-md-6 col-sm-12 pt-5 text-center p-5">
             <p class="mt-5">
-               <h3 class="display-2">Nutricionista</h3>
+            <h3 class="display-2">Nutricionista</h3>
             </p>
             <p>
-               <h4 class="display-4">Lucas Cardoso de Sousa</h4>
+            <h4 class="display-4">Lucas Cardoso de Sousa</h4>
             </p>
             <p>
-               <h4 class="h3 my-5">CRN-6 32138</h4>
+            <h4 class="h3 my-5">CRN-6 32138</h4>
             </p>
             <p>
-               <h4 class="h3 my-5">Emagrecimento, Performance, <br/>Bem-estar, Saúde e Qualidade de vida.</h4>
+            <h4 class="h3 my-5">Emagrecimento, Performance, <br />Bem-estar, Saúde e Qualidade de vida.</h4>
             </p>
             <p>
                <br>
-               <button type="button" data-toggle="modal" data-target="#ExemploModalCentralizado"
+               <button type="button" data-toggle="modal" data-target="#modalAgendamento"
                   class="btn btn-lg btn-success buttonContato">Agendar Consulta</button>
             </p>
          </div>
@@ -294,6 +294,10 @@
          </div>
       </div>
       <!-- FIM DAS MINHAS ESPECIALIZAÇÕES -->
+      <!-- DNA -->
+      <div class="dna row mt-5">
+      </div>
+      <!-- FIM DNA -->
       <!-- Carrocel -->
       <div id="carouselExampleIndicators" class="carousel slide w-50 my-5 mx-auto" data-ride="carousel">
          <ol class="carousel-indicators">
@@ -346,15 +350,17 @@
 
       <!-- FIM PARCEIROS -->
 
-      <img src="img/WhatsApp.png" class="imgWhats buttonContato" data-toggle="modal" data-target="#ExemploModalCentralizado">
+      <img src="img/WhatsApp.png" class="imgWhats buttonContato" data-toggle="modal" data-target="#modalAgendamento">
    </main>
 
    <footer class="footer mt-4">
       <img src="img/logo-2.svg" alt="">
       <div>
-         <a href="https://www.instagram.com/nutricionist.lucas/" target="_black"><i class="fab fa-instagram mx-1 mb-2"></i></a>
+         <a href="https://www.instagram.com/nutricionist.lucas/" target="_black"><i
+               class="fab fa-instagram mx-1 mb-2"></i></a>
 
-         <a href="" data-toggle="modal" data-target="#ExemploModalCentralizado" target="_black"><i class="fab fa-whatsapp mx-1"></i></a>
+         <a href="" data-toggle="modal" data-target="#modalAgendamento" target="_black"><i
+               class="fab fa-whatsapp mx-1"></i></a>
       </div>
    </footer>
 
@@ -375,13 +381,13 @@
 
    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-   </script>
+      </script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
       integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
-   </script>
+      </script>
    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
       integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
-   </script>
+      </script>
 </body>
 
 </html>
