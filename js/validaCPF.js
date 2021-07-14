@@ -5,19 +5,22 @@ let chamaValidaCPF = (param) => {
    if (check == false) {
       elemento.classList.add("border-danger");
 
-   } else if (check == true){
+   } else if (check == null) {
+      elemento.classList.remove("border-danger");
+      elemento.classList.remove("border-success");
+
+   } else {
       elemento.classList.remove("border-danger");
       elemento.classList.add("border-success");
-   } else {
-      
    }
 }
+
 
 let validaCPF = (strCPF) => {
    let Soma;
    let Resto;
    Soma = 0;
-   
+
    if (strCPF == "") return null;
    if (strCPF == "00000000000") return false;
 
