@@ -5,13 +5,6 @@
 /*HEADER*/
 
 header {
-  /* background-color: #359672;
-  background-image: linear-gradient(
-    43deg,
-    #195740 0%,
-    #23a87a 46%,
-    #10d88b 100%
-  ); */
   background-color: #10d88b;
   background-image: linear-gradient(
     43deg,
@@ -107,35 +100,6 @@ main {
   cursor: pointer;
   -webkit-filter: drop-shadow(5px 5px 5px #222222);
   filter: drop-shadow(5px 5px 5px #222222);
-}
-
-.logoclip {
-  z-index: 10;
-  position: absolute;
-  left: -150px;
-}
-
-@media (max-width: 450px) {
-  .logoclip {
-    left: -90px;
-  }
-}
-
-.logoclip2 {
-  z-index: 10;
-  position: absolute;
-  right: 25px;
-}
-
-@media (max-width: 470px) {
-  .logoclip2 {
-    right: -55px;
-  }
-}
-
-.imgclip {
-  z-index: -10;
-  position: relative;
 }
 
 .dna {
