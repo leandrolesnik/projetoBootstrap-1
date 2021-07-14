@@ -79,6 +79,10 @@ main {
    background-color: #23a87a;
 }
 
+.imgPessoal {
+   max-height: 70vh;
+}
+
 /*Config img whatsapp*/
 
 .imgWhats {
