@@ -1,7 +1,7 @@
 const formulario = document.querySelector('#formulario');
 const buttonSubmit = document.querySelector('#submit');
 const urlDesktop = 'https://api.whatsapp.com/';
-const telefone = '+5551995887955';
+const telefone = '+558899053714';
 
 const whatsapp = () => {
    let nome = document.querySelector('#nome').value;
