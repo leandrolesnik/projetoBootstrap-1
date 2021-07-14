@@ -24,7 +24,7 @@
             <span>Tamanho do texto</span>
          </div>
          <div>
-            <button onclick="fontplus()">Aumentar</button>
+            <button onclick=aumentar()>Aumentar</button>
             <button onclick="diminuir()">Diminuir</button>
          </div>
       </div>
@@ -153,7 +153,8 @@
       <!-- SEÇÃO INFORMAÇÕES PROFISSIONAIS -->
       <div class="container-fluid row justify-content-center">
          <div class="row col-md-6 col-sm-9 pt-5 justify-content-center">
-            <img src="img/imgPessoalMesclada1.png" class="col-xl-8 col-lg-9 col-md-9 col-sm-12 rounded img-fluid" alt="">
+            <img src="img/imgPessoalMesclada1.png" class="col-xl-8 col-lg-9 col-md-9 col-sm-12 rounded img-fluid"
+               alt="">
          </div>
          <div class="col-md-6 col-sm-12 pt-5 text-center p-5">
             <p class="mt-5">
@@ -198,7 +199,7 @@
             <p class="h4">
                Me formei no Centro Universitário INTA - UNINTA
             </p>
-            <p class="lead">
+            <p class="lead" id="textoPessoal">
                Desde novo era incentivado e ensinado a comer bem pra evitar problemas no futuro, então cresci sabendo da
                importância de uma boa alimentação. Presenciando muitas pessoas próximas adoecerem por causa de nunca se
                importaram ou nunca terem sido devidamente ensinados a comer saudável.
@@ -209,7 +210,8 @@
             </p>
          </div>
          <div class="col-md-6 col-sm-12 pt-5">
-            <img src="img/imgPessoalMesclada2.png" class="col-xl-8 col-lg-9 col-md-9 col-sm-12 rounded img-fluid" alt="">
+            <img src="img/imgPessoalMesclada2.png" class="col-xl-8 col-lg-9 col-md-9 col-sm-12 rounded img-fluid"
+               alt="">
          </div>
 
       </div>
@@ -227,7 +229,7 @@
                alt="Tigela com frutas vermelhas dentro.">
             <div class="card-body">
                <p class="card-text h5">Públicos diversos</p>
-               <p class="text-justify">Atendimento personalisado fiscalizando diariamente o como você está indo na
+               <p class="text-justify" id="textoEspecializacaoUm">Atendimento personalisado fiscalizando diariamente o como você está indo na
                   dieta, levando segurança e apoio ao meu paciente.</p>
             </div>
          </div>
@@ -237,7 +239,7 @@
                alt="Mulher moendo pimenta na panela em uma cozinha.">
             <div class="card-body">
                <p class="card-text h5">Terapia nutricional de doenças crônicas</p>
-               <p class="text-justify">De forma personalizada atendendo meus pacientes de casos leveis a graves, com
+               <p class="text-justify" id="textoEspecializacaoDois">De forma personalizada atendendo meus pacientes de casos leveis a graves, com
                   foco em melhoria clínica, conforto e bem-estar. Uma dienta saudável e balanciada encaminha o paciente
                   a evitar complicações, e reinternações desnecessárias.</p>
             </div>
@@ -248,7 +250,7 @@
             <img class="imgEspecialidade img-fluid" src="img/dIntestino.jpg" alt="Escrita: Food is medicine!">
             <div class="card-body">
                <p class="card-text h5">Tratamento de doenças do intestino</p>
-               <p class="text-justify">Muitas vezes ouvimos e lemos muito sobre diversões métodos mágicos que podem
+               <p class="text-justify" id="textoEspecializacaoTres">Muitas vezes ouvimos e lemos muito sobre diversões métodos mágicos que podem
                   melhorar nossa saúde, a maioria desses métodos não funcionam e podem prejudicar nossa saúde. Não tenho
                   métodos mágicos para oferecer, posso te ajudar com uma alimentação pois só ela pode te ajudar com o
                   controle de doenças.</p>
@@ -261,7 +263,7 @@
                alt="Três mulheres com traje de ginástica.">
             <div class="card-body">
                <p class="card-text h5">Praticantes de atividade física</p>
-               <p class="text-justify">Meu foco é ajudar com alimentação regrada e balanceada para manter o equilíbrio
+               <p class="text-justify" id="textoEspecializacaoQuatro">Meu foco é ajudar com alimentação regrada e balanceada para manter o equilíbrio
                   das necessidades energéticas através da indicação de nutrientes necessários a cada organismo, conforme
                   a modalidade.</p>
             </div>
@@ -273,7 +275,7 @@
                alt="Frango gralhado com acompanhamentos vegetais.">
             <div class="card-body">
                <p class="card-text h5">Foco em emagrecimento</p>
-               <p class="text-justify">Meu foco é totalmente te ajudar a alcançar o peso tão sonhado, com uma dieta
+               <p class="text-justify" id="textoEspecializacaoCinco">Meu foco é totalmente te ajudar a alcançar o peso tão sonhado, com uma dieta
                   balanceada, rica no que mais precisa, com valores acessíveis, e para todos os gostos. Dietas para
                   veganos, vegetarianos, intolerantes.</p>
             </div>
@@ -285,7 +287,7 @@
                alt="Mulher carregando dois patros com salada.">
             <div class="card-body">
                <p class="card-text h5">Reeducação alimentar</p>
-               <p class="text-justify">Reeducar uma alimentação saudável sem terrorismo, entender as necessidades do
+               <p class="text-justify" id="textoEspecializacaoSeis">Reeducar uma alimentação saudável sem terrorismo, entender as necessidades do
                   paciente, e suas possível frustrações e rejeições à dieta. Dieta totalmente conversável e adaptada.
                </p>
             </div>
@@ -386,7 +388,7 @@
    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
       integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
       </script>
-      
+
 </body>
 
 </html>

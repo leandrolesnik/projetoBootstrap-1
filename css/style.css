@@ -2,6 +2,11 @@
   scroll-behavior: smooth;
 }
 
+.fontplus {
+   font-size: 1.6rem !important;
+   font-weight: 500 !important;
+}
+
 /*HEADER*/
 
 header {
