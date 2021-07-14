@@ -9,6 +9,7 @@ const whatsapp = () => {
    let idade = document.querySelector('#idade').value;
    let cpf = document.querySelector('#cpf').value;
    let genero = document.querySelector('#selectGenero').value;
+   let objetivo = document.querySelector('#objetivo').value;
    
    let acompanhamento;
    if (document.querySelector('#inputSimAcompanhamento').checked == true)
@@ -22,7 +23,7 @@ const whatsapp = () => {
    else if (document.querySelector('#inputNaoComorbidade').checked == true)
       comorbidade = "Não";
 
-   let mensagem = "send?phone=" + telefone + "&text=* Formulario Contato de cliente -->> %0A Nome: %0A " + nome + " %0A E-mail: %0A " + email + " %0A Idade: %0A " + idade + " %0A Genero: %0A " + genero + " %0A Acompanhamento: %0A " + acompanhamento + " %0A Comorbidade: %0A " + comorbidade;
+   let mensagem = "send?phone=" + telefone + "&text=* Formulario Contato de cliente -->> %0A Nome: %0A " + nome + " %0A E-mail: %0A " + email + " %0A Idade: %0A " + idade + " %0A Genero: %0A " + genero + " %0A Objetivo: %0A " + objetivo + " %0A Acompanhamento: %0A " + acompanhamento + " %0A Comorbidade: %0A " + comorbidade;
 
    window.open(urlDesktop + mensagem, '_blank');
 }
