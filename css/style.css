@@ -17,8 +17,13 @@ header {
     #23a87a 46%,
     #195740 100%
   );
-
   min-height: 15vh;
+}
+
+/*MAIN*/
+
+main {
+  min-height: 100vh;
 }
 
 .btn-success {
@@ -29,11 +34,6 @@ header {
     #23a87a 46%,
     #195740 100%
   );
-}
-/*MAIN*/
-
-main {
-  min-height: 100vh;
 }
 
 /* BOTOES DE ACESSIBILIDADE */
@@ -96,7 +96,7 @@ main {
 /*Config img whatsapp*/
 
 .imgWhats {
-  max-width: 6%;
+  max-width: 75px;
   position: absolute;
   position: fixed;
   right: 1%;
@@ -105,6 +105,49 @@ main {
   cursor: pointer;
   -webkit-filter: drop-shadow(5px 5px 5px #222222);
   filter: drop-shadow(5px 5px 5px #222222);
+}
+
+@media(max-width:576px){
+  .imgWhats{
+  max-width:50px;
+  position: absolute;
+  position: fixed;
+  right: 1%;
+  bottom: 1%;
+  z-index: 10;
+  cursor: pointer;
+  -webkit-filter: drop-shadow(5px 5px 5px #222222);
+  filter: drop-shadow(5px 5px 5px #222222);
+
+  }
+}
+
+/*config img arrow UP*/
+.fa-chevron-up{
+  position: absolute;
+  position: fixed;
+  left: 1%;
+  bottom: 1%;
+  z-index: 10;
+  cursor: pointer;
+  -webkit-filter: drop-shadow(5px 5px 5px #222222);
+  filter: drop-shadow(5px 5px 5px #222222);
+  font-size: 75px;
+  color: #1A5E45;
+}
+@media(max-width:576px){
+  .fa-chevron-up{
+  position: absolute;
+  position: fixed;
+  right: 1%;
+  bottom: 1%;
+  z-index: 10;
+  cursor: pointer;
+  -webkit-filter: drop-shadow(5px 5px 5px #222222);
+  filter: drop-shadow(5px 5px 5px #222222);
+  font-size: 50px;
+  color: #1A5E45;
+  }
 }
 
 .dna {
